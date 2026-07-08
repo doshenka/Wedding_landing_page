@@ -4,6 +4,7 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
     color: black;
+    letter-spacing: 8%
 }
 
 a, p, pre, span, h1, h2, h3, h4, h5, h6, header, main, footer {
@@ -11,12 +12,49 @@ a, p, pre, span, h1, h2, h3, h4, h5, h6, header, main, footer {
     padding: 0;
 }
 
-header {
-    width: 100%;
-    margin-top: 50px;
+section {
+    margin: 75px 0;
 }
 
-header .header_fon_img{
+.header_foto {
+    width: 100%;
+    margin-top: 100px;
+    position: relative;
+}
+
+.header_foto .header_fon_img{
+    width: 100%;
+    height: auto;
+    position: fixed;
+}
+
+.section1 {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 100px;
+}
+
+.section1_text {
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    font-weight: 600;
+    gap: 70px;
+    text-align: center;
+}
+
+.section1_text h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.section1_text span {
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.section1 img{
     width: 100%;
     height: auto;
 }
