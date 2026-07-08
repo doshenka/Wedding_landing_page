@@ -13,7 +13,10 @@ a, p, pre, span, h1, h2, h3, h4, h5, h6, header, main, footer {
 
 header {
     width: 100%;
-    height: 504px;
-    background: url('fotos/header/big_header_fon.png') no-repeat;
     margin-top: 50px;
+}
+
+header .header_fon_img{
+    width: 100%;
+    height: auto;
 }
