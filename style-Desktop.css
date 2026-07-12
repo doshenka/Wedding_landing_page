@@ -12,10 +12,6 @@ a, p, pre, span, h1, h2, h3, h4, h5, h6, header, main, footer {
     padding: 0;
 }
 
-section {
-    margin: 75px 0;
-}
-
 .header_foto {
     width: 100%;
     margin-top: 100px;
@@ -25,7 +21,13 @@ section {
 .header_foto .header_fon_img{
     width: 100%;
     height: auto;
-    position: fixed;
+    /*position: fixed;*/
+}
+
+/* section 1 */
+
+section {
+    margin: 150px 0;
 }
 
 .section1 {
@@ -35,7 +37,7 @@ section {
     gap: 100px;
 }
 
-.section1_text {
+.section1 .text {
     display: flex;
     align-items: center;
     flex-flow: column nowrap;
@@ -44,12 +46,12 @@ section {
     text-align: center;
 }
 
-.section1_text h1 {
+.section1 h1 {
     text-transform: uppercase;
     font-size: 40px;
 }
 
-.section1_text span {
+.section1 span {
     text-transform: uppercase;
     font-size: 24px;
 }
@@ -57,4 +59,302 @@ section {
 .section1 img{
     width: 100%;
     height: auto;
+}
+
+/* section 2 */
+
+.section2 {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 130px;
+}
+
+.section2 .date {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.section2 .date .container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+    text-transform: uppercase;
+}
+
+.section2 .date .container span {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.section2 .date .container .day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-image: url('fotos/desctop/big_foto_day.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 141px;
+    height: 118px;
+}
+
+.section2 .date .container .day h2 {
+    font-size: 64px;
+    font-weight: 300;
+    margin-left: 8px;
+}
+
+.section2 .info {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.section2 .info .location {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    width: 358px;
+}
+
+.section2 .info .location .text{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.section2 .info .location .text h3{
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.section2 .info .location .text span{
+    font-size: 24px;
+    text-align: center;
+}
+
+.section2 .info .location .map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-image: url('fotos/desctop/big_foto_btn.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 140px;
+    height: 68px;
+}
+
+.section2 .info .location .map button{
+    margin: 0;
+    font-family: "Cormorant Infant", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: black;
+    letter-spacing: 8%;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+
+    border: 0px;
+    background-color: #fff;
+    /*transition: text-decoration 0.2s ease;*/
+}
+
+.section2 .info .location .map button:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.section2 .info .timeplane {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    width: 285px;
+}
+
+.section2 .info .timeplane h3{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.section2 .info .timeplane .plane {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.section2 .info .timeplane .plane .container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 54px;
+    width: 100%;
+    height: 87px;
+}
+
+.section2 .info .timeplane .plane .container .text {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.section2 .info .timeplane .plane .container .text span {
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.section2 .info .timeplane .plane .container .text .time {
+    color: #5F2121;
+    font-size: 28px;
+
+    font-family: "Aguafina Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* section 3 */
+
+.section3 {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section3 .text {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+}
+
+.section3 .text h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.section3 .text span {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.section3 .numbers {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.section3 .numbers .timur,
+.section3 .numbers .rufina {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-image: url('fotos/desctop/big_foto_num_btn.png');
+    background-position: center;
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    width: 204px;
+    height: 113px;
+}
+
+.section3 .numbers span {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.section3 .numbers button {
+    margin: 0;
+    font-family: "Cormorant Infant", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: black;
+    letter-spacing: 8%;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+
+    border: 0px;
+    background-color: #fff;
+    /*transition: text-decoration 0.2s ease;*/
+}
+
+.section3 .numbers button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.section4 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.section4 span {
+    width: 792px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+footer span {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
 }
